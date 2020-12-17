@@ -43,7 +43,7 @@ export default function Input() {
   const changeInput = evt => {
     // When the input changes, its whole value can be found inside the event object.
     // Log out the synthetic event object 'evt' and see for yourself.
-    const {inputValue} = evt.target;
+    const {} = evt.target;
     /* STEP 4 */
   };
   const reset = () => {
@@ -54,7 +54,7 @@ export default function Input() {
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    //color: { inputValue > 10 ? 'crimson' : 'royalblue' }, /* STEP 2 */
+    color: inputValue > 10 ? 'crimson' : 'royalblue', /* STEP 2 */
     textTransform: 'uppercase',
   };
 
